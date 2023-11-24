@@ -1,16 +1,16 @@
-import { Schema, model } from "mongoose";
+import {Schema, model} from 'mongoose';
 
 const crudSchema = new Schema({
-  name: {
-    type: String,
+  name:{
+    type: String
   },
-  description: {
-    type: String,
+  description:{
+    type: String
   },
-  status: {
+  status:{
     type: Boolean,
-    default: true,
-  },
+    default: true
+  }
 });
 
-export const CrudModel = model('crud', crudSchema);
+export const CrudModel = model('cruds', crudSchema);
